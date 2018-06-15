@@ -14,7 +14,7 @@ document.onkeyup = function(event) {
     console.log(userGuess);
     console.log(computerGuess);
 
-    guessed.push(userGuess);
+    guessed.push(userGuess);   
 
     if(userGuess === computerGuess){
         wins++;
@@ -35,6 +35,8 @@ document.onkeyup = function(event) {
         losses++;
         guessed = [];
         guessesLeft = 9;
+        computerGuess = alph[Math.floor(Math.random() * alph.length)];
+
 
     }
 
