@@ -20,8 +20,9 @@ document.onkeyup = function(event) {
         wins++;
         guessesLeft = 10;
         guessed = [];
-        computerGuess = alph[Math.floor(Math.random() * alph.length)];
         alert("WELL DONE M8! IT WAS " + computerGuess);
+        computerGuess = alph[Math.floor(Math.random() * alph.length)];
+
     }
 
     if(userGuess != computerGuess){
