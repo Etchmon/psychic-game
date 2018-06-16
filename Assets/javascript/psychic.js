@@ -13,9 +13,13 @@ document.onkeyup = function(event) {
     var userGuess = event.key;
     console.log(userGuess);
     console.log(computerGuess);
-
-    guessed.push(userGuess);   
-
+    for(i = 0; i < alph.length; i++){
+        if(alph[i] === userGuess){
+            guessed.push(userGuess);   
+        }
+        if(alph[i] != userGuess) {
+            
+        }}
     if(userGuess === computerGuess){
         wins++;
         guessesLeft = 10;
